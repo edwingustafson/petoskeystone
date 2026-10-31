@@ -1,6 +1,6 @@
 // Render a gallery of looks into examples/ plus a contact sheet.
 
-import { mkdir, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, writeFile } from 'node:fs/promises';
 import sharp from 'sharp';
 import { generate, type GenerateOptions } from '../src/generate.mts';
 import { encodeImage } from '../src/encode.mts';
@@ -45,3 +45,7 @@ await sharp({ create: { width: cols * thumb, height: Math.ceil(files.length / co
   .jpeg({ quality: 85 })
   .toFile('examples/contact-sheet.jpg');
 process.stdout.write('examples/contact-sheet.jpg\n');
+
+// The README shows this copy; examples/ itself is not committed.
+await copyFile('examples/contact-sheet.jpg', 'README.jpg');
+process.stdout.write('README.jpg\n');

@@ -16,7 +16,7 @@ npm run typecheck                            # tsc --noEmit (TypeScript 7)
 npm test                                     # node --test "test/**/*.test.mts"
 node --test test/generate.test.mts           # a single test file
 node --test --test-name-pattern="seamless" "test/**/*.test.mts"   # tests matching a name
-npm run examples                             # regenerate examples/*.jpg and examples/contact-sheet.jpg
+npm run examples                             # regenerate examples/ (git-ignored) and README.jpg (committed; shown in README.md)
 ```
 
 To check a visual change, render small (for example `--size 700x700 --cell-size 140 --seed 7`) and look at the output image, comparing it against photos of real stones. Tests only check correctness, not appearance.

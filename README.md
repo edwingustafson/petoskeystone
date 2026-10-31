@@ -2,7 +2,9 @@
 
 A Node.js command-line tool that procedurally generates images of **Petoskey stones**, the fossil colonial coral *Hexagonaria percarinata*. It can render them stylized or photo-real (raw, tumbled or polished), as seamless tiles or stone silhouettes, and output PNG, JPEG, JPEG XL or AVIF.
 
-Run `npm run examples` to render a gallery of sample looks into `examples/`.
+![examples](README.jpg)
+
+Run `npm run examples` to render a gallery of sample looks into `examples/` (it also refreshes `README.jpg`).
 
 ## Requirements
 
