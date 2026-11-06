@@ -43,7 +43,7 @@ Options can also come from a JSON file that uses the same names as the flags, fo
 |---|---|---|
 | `--style` | `stylized` (flat, graphic) or `realistic` (shaded, textured) | `realistic` |
 | `--finish` | `raw`, `tumbled` or `polished` (realistic only) | `polished` |
-| `--palette` | `natural`, `ocean`, `ember`, `moss`, `mono`, `neon`, `sandstone`, `custom` | `natural` |
+| `--palette` | `natural`, `ocean`, `ember`, `moss`, `mono`, `neon`, `sandstone`, `green`, `amber`, `custom` | `natural` |
 | `--colors` | with `custom`: `wall,body,eye[,septa,matrix]` hex colors | — |
 | `--cell-size` | mean corallite diameter in output pixels: the pattern's **scale** | 160 |
 | `--regularity` | 0 = chaotic polygons … 1 = perfect hexagons | 0.6 |

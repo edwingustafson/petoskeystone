@@ -113,6 +113,25 @@ const PRESETS: { readonly [name: string]: HexPalette } = {
     eye: '#5a3720',
     matrix: '#8c6a4f',
   },
+  // Retro terminal themes: dark phosphor-tinted backgrounds, kept dim enough that
+  // bright green (#33ff33) or amber (#ffb000) text stays readable on top
+  // (wall-to-text contrast is about 7:1), with the pattern still visible.
+  green: {
+    wall: '#174d22',
+    septa: '#103a19',
+    body: '#0a2610',
+    bodyInner: '#061a0a',
+    eye: '#020a04',
+    matrix: '#081d0c',
+  },
+  amber: {
+    wall: '#4d3207',
+    septa: '#3a2505',
+    body: '#261803',
+    bodyInner: '#1a1002',
+    eye: '#0a0601',
+    matrix: '#1d1203',
+  },
 };
 
 export const PALETTE_NAMES: readonly string[] = [...Object.keys(PRESETS), 'custom'];
